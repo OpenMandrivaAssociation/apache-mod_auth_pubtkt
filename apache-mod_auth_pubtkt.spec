@@ -35,8 +35,8 @@ signed using either RSA or DSA.
 cp %{SOURCE1} %{mod_conf}
 
 %build
-sh configure
-#%%{_sbindir}/apxs -c %{mod_name}.c
+sh configure --apachever=2.2
+
 %make
 
 %install
