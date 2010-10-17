@@ -6,8 +6,8 @@
 
 Summary:	A pragmatic Web Single Sign-On (SSO) solution
 Name:		apache-%{mod_name}
-Version:	0.5
-Release:	%mkrel 4
+Version:	0.6a
+Release:	%mkrel 1
 Group:		System/Servers
 License:	BSD-like
 URL:		https://neon1.net/mod_auth_pubtkt/
