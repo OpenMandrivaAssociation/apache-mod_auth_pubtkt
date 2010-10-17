@@ -30,7 +30,7 @@ signed using either RSA or DSA.
 
 %prep
 
-%setup -q -n %{mod_name}-%{version}
+%setup -q -n %{mod_name}
 
 cp %{SOURCE1} %{mod_conf}
 
