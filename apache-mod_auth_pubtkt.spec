@@ -6,8 +6,8 @@
 
 Summary:	A pragmatic Web Single Sign-On (SSO) solution
 Name:		apache-%{mod_name}
-Version:	0.6a
-Release:	%mkrel 4
+Version:	0.8
+Release:	%mkrel 1
 Group:		System/Servers
 License:	BSD-like
 URL:		https://neon1.net/mod_auth_pubtkt/
@@ -30,12 +30,12 @@ signed using either RSA or DSA.
 
 %prep
 
-%setup -q -n %{mod_name}
+%setup -q -n %{mod_name}-%{version}
 
 cp %{SOURCE1} %{mod_conf}
 
 %build
-sh configure --apachever=2.2
+sh configure --apxs=%{_bindir}/apxs --apachever=2.2
 
 %make
 
